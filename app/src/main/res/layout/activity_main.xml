@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp" android:background="@color/primary" android:orientation="vertical">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smart Pantry Manager" android:textColor="@android:color/white" android:textSize="26sp" android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Use what you already have. Waste less." android:textColor="@android:color/white" android:textSize="14sp" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:orientation="horizontal">
+        <Button android:id="@+id/btnSuggestions" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Suggested Recipes"/>
+        <Button android:id="@+id/btnSettings" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:text="Settings"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp" android:text="My Pantry" android:textSize="21sp" android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerPantry" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp"/>
+    <Button android:id="@+id/btnAdd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="+ Add Pantry Item"/>
+</LinearLayout>
